@@ -1,5 +1,18 @@
 body {
+    width: 375px;
+    margin: 0 auto;
     background-color:#020659;
+    
+main {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "jazzStation jazzStation"
+    "trending trending"
+    "yourPlaylists yourPlaylists"
+    "footer footer"
+    ;
+    background-color: white;
 }
 
 ul {
