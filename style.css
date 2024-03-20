@@ -2,18 +2,110 @@ body {
     width: 375px;
     margin: 0 auto;
     background-color:#020659;
-    
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 main {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "jazzStation jazzStation"
-    "trending trending"
-    "yourPlaylists yourPlaylists"
-    "footer footer"
-    ;
     background-color: white;
 }
+
+h2 {
+    color: #590242;
+}
+
+#mainTitle {
+    font-variant: small-caps;
+}
+
+#pageInfo {
+    background: linear-gradient(to right,#2104d9,black);
+}
+
+#trending {
+    width:375px;
+    display: flex;
+    overflow: scroll;
+}
+
+#yourPlaylists {
+    background-color: #2699fb;
+    display: flex;
+    overflow: scroll;
+}
+
+#curatedPlaylists {
+    background-color: #030a8c;
+    display: flex;
+    overflow: scroll;
+}
+
+#best2020, #pumpkinSpice, #quietStorm, #smoothJazz, #smoothStudy, #boozyBrunch, #dinnerParty, #mellow, #jazzChill, #jazzSax {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;;
+}
+
+#best2020, #pumpkinSpice, #quietStorm, #smoothJazz {
+    background-color: #0d8dfb;
+}
+
+#boozyBrunch, #dinnerParty, #mellow, #jazzChill, #jazzSax {
+    background-color: #020873;
+}
+
+#button {
+    background-color: #590242;
+    margin-left: 50px;
+    margin-right: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ul {
     overflow: hidden;
@@ -70,6 +162,14 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 @media screen and (min-width:834px) {
+    body {
+        width : 834px;
+    }
+
+    #trending {
+        width: 834px;
+    }
+
     ul {
         overflow: visible;
         position: absolute;
