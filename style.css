@@ -22,11 +22,27 @@ h2 {
     background: linear-gradient(to right,#2104d9,black);
 }
 
+/* Trending Songs */
+
 #trending {
-    width:375px;
+    width: 375px;
     display: flex;
     overflow: scroll;
 }
+
+#trending section {
+    position: relative;
+    color: #590242;
+}
+
+audio {
+    position: absolute;
+    bottom: 225px;
+    right: 5px;
+    opacity: 80%;
+}
+
+/* Your playlists */
 
 #yourPlaylists {
     background-color: #2699fb;
@@ -43,10 +59,12 @@ h2 {
 #best2020, #pumpkinSpice, #quietStorm, #smoothJazz, #smoothStudy, #boozyBrunch, #dinnerParty, #mellow, #jazzChill, #jazzSax {
     margin: 10px;
     padding: 5px;
-    text-align: center;;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#best2020, #pumpkinSpice, #quietStorm, #smoothJazz {
+#best2020, #pumpkinSpice, #quietStorm, #smoothJazz, #smoothStudy {
     background-color: #0d8dfb;
 }
 
@@ -55,9 +73,17 @@ h2 {
 }
 
 #button {
+    width: 100px;
     background-color: #590242;
-    margin-left: 50px;
-    margin-right: 350px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 
 
