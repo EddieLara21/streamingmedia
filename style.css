@@ -180,16 +180,23 @@ footer {
         grid-template-rows: auto auto;
     }
 
+
     #trending {
         grid-area: auto;
         width: 834px;
     }
 
     #playlists {
-        grid-area: auto
-        width: 834px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 250px;
+        overflow: scroll;
+    }
+    #yourPlaylists {
+        flex-direction: column;
+    }
+    #curatedPlaylists {
+        flex-direction: column;
     }
 
     #best2020, #pumpkinSpice, #quietStorm, #smoothJazz, #smoothStudy, #boozyBrunch, #dinnerParty, #mellow, #jazzChill, #jazzSax {
@@ -216,5 +223,6 @@ footer {
     label span, input {
         display: none;
     }
+    
 
 }
