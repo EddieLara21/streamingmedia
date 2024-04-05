@@ -173,20 +173,38 @@ footer {
         grid-template-areas: 
         "header header"
         "pageInfo pageInfo"
-        "main main"
-        "footer footer"
-        ;
-    }
-
-    main {
-        display: grid;
-        grid-template-rows: auto 1fr;
+        "trending trending"
+        "playlists playlists"
+        "footer footer";
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
 
     #trending {
+        grid-area: auto;
         width: 834px;
     }
+
+    #playlists {
+        grid-area: auto
+        width: 834px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #best2020, #pumpkinSpice, #quietStorm, #smoothJazz, #smoothStudy, #boozyBrunch, #dinnerParty, #mellow, #jazzChill, #jazzSax {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+#button {
+    float: right;
+}
+
+#button:hover {
+    background-color: #020659;
+}
 
     ul {
         overflow: visible;
